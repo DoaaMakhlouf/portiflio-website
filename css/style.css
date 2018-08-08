@@ -34,7 +34,7 @@ header, footer, section, article {
 
 .header__logo {
   float: left;
-  width: 33.33%;
+  width: 25%;
 }
 
 .header__title {
@@ -49,4 +49,8 @@ header, footer, section, article {
   float: left;
   width: 33.33%;
   padding: 5px;
+}
+
+img {
+    width: 100%;
 }
