@@ -6,51 +6,145 @@ body, html {
 }
 
 body {
-  font-family: Roboto;
   font-size: 12px;
   color: #424242;
 }
 
 h1, h2, h3 {
+  font-family: Sans-serif;
   margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+h3 {
+  font-size: 1em;
 }
 
 header, footer, section, article {
   box-sizing: border-box;
 }
 
-.header {
+img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
   transition: min-height 0.3s;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-bottom: 1.5em;
+  width: 100%;
 }
 
-.header__inner {
-  width: 800px;
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.header_logo {
+}
+
+.header_text {
+  margin: 0.5em;
+  display: inline-block;
+  color: #2d3c49;
+  padding: 1em;
   text-align: center;
+}
+
+.site_body {
+  display: grid;
+  grid-template-rows: 0.5fr 0.1fr 1fr;
+}
+
+.main_image {
+  width: 100%;
+}
+
+.projects_title {
+  color: #02b3e4;
+  padding: 2em 0 1em 1em;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 100%;
+}
+
+.project-img {
+  height: 80%;
+  width: 90%;
+  padding-bottom: 0.5;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header__logo {
-  float: left;
-  width: 25%;
+.project-link {
+  text-align: center;
+  padding: 0.5em;
 }
 
-.header__title {
-  font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
-  display: inline-block;
-  color: #212121;
+@media screen and (min-width: 470px) {
+  .project {
+    width: 50%;
+  }
+  .project-img {
+    width: 90%;
+  }
 }
 
-.project{
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+@media screen and (min-width: 650px) {
+  .header_title {
+    font-weight: 200;
+    font-size: 2em;
+  }
+  .header_inner {
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+  .site_body {
+    grid-template-rows: 0.5fr;
+  }
+  .project {
+    width: 33.3%;
+  }
+  .project-img {
+    height: 90%;
+  }
+  .project-link {
+    font-size: 1.2em;
+  }
 }
 
-img {
-    width: 100%;
+@media screen and (min-width: 1000px) {
+  .header_title {
+    font-weight: 300;
+    font-size: 3em;
+  }
+  .header_inner {
+    font-weight: 200;
+    font-size: 2.5em;
+  }
+  .project-link {
+    font-size: 1.5em;
+  }
+
 }
