@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Portfolio Site</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/smallest-viewport.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <div class="header__logo">
-      <img src="https://goo.gl/ci1ozj" alt="udacity logo" height="200">
+    <div class="header_logo">
+      <img src="https://goo.gl/ci1ozj" alt="udacity logo">
     </div>
-    <div class="header__title">
-      <h1>Doaa Makhlouf</h1>
+    <div class="header_text">
+      <div class="header_title">
+        <h1>Doaa Makhlouf</h1>
+      </div>
+      <div class="header_inner">
+        <h3>Full Stack Web Developer</h3>
+      </div>
     </div>
-    <div class="header__inner">
-      <h2>Full Stack Web Developer</h2>
-    </div>
-    <hr>
   </header>
-  <section>
-    <img src="https://goo.gl/GmksBQ" alt="full stack developer image" height="500">
-    <br><br><br>
-    <div>
-    <h2>Featured Work</h2>
-    <article class='project'>
-      <img src="https://goo.gl/KV1NiC" alt="project1 image" height="200">
-      <a href="https://github.com/DoaaMakhlouf/movie-website">
-        <h3>Movies Website Project</h3></a>
-    </article>
-    <article class='project'>
-      <img src="https://goo.gl/fxtmrk" alt="project2 image" height="200">
-      <a href="https://github.com/DoaaMakhlouf/portiflio-website">
-        <h3>Portifolio Website Project</h3></a>
-    </article>
-    <article class='project'>
-      <img src="https://goo.gl/pHxciU" alt="project3 image" height="200">
-      <a href="https://github.com/DoaaMakhlouf/logs-analysis">
-        <h3>Logs Analysis Project</h3></a>
-    </article>
-  </div>
+  <section class="site_body">
+    <div class="main_image">
+      <img src="https://goo.gl/GmksBQ" alt="full stack developer image">
+    </div>
+    <div class="projects_title">
+      <h2>Featured Work:</h2>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <img class="project-img" src="https://goo.gl/KV1NiC" alt="project1 image">
+        <div class="project-link">
+          <a href="https://github.com/DoaaMakhlouf/movie-website">
+            <h3>Movies Website Project</h3></a>
+        </div>
+      </article>
+      <article class="project">
+        <img class="project-img" src="https://goo.gl/fxtmrk" alt="project2 image">
+        <div class="project-link">
+          <a href="https://github.com/DoaaMakhlouf/portiflio-website">
+            <h3>Portifolio Website Project</h3></a>
+        </div>
+      </article>
+      <article class="project">
+        <img class="project-img" src="https://goo.gl/pHxciU" alt="project3 image">
+        <div class="project-link">
+          <a href="https://github.com/DoaaMakhlouf/logs-analysis">
+          <h3>Logs Analysis Project</h3></a>
+        </div>
+      </article>
+    </div>
   </section>
+
   <footer>
     <hr>
-    <p>
+    <h3>
       Contact Information:
-      <a href="mailto:doaa.abdelaal.20@gmail.com">
-      doaa.abdelaal.20@gmail.com</a>
-    </p>
+      <a href="mailto:doaa.abdelaal.20@gmail.com">gmail</a>
+    </h3>
   </footer>
+
 </body>
+
 </html>
